@@ -13,6 +13,60 @@ class AlertPage extends StatelessWidget {
           Navigator.pop(context);
         },
       ),
+      body: Center(
+        child: RaisedButton(
+          child: Text(
+            "Mostrar Alerta",
+            style: TextStyle(color: Colors.white),
+          ),
+          color: Colors.blue,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
+          onPressed: () {
+            this._mostrarAlerta(context);
+          },
+        ),
+      ),
     );
+  }
+
+  void _mostrarAlerta(BuildContext context) {
+    showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            content: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: <Widget>[
+                Text("Esta la alerta poderisisisima"),
+                SizedBox(
+                  height: 15.0,
+                ),
+                FlutterLogo(
+                  size: 100.0,
+                )
+              ],
+            ),
+            actions: this._regresarBotones(context),
+            shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15.0)),
+          );
+        },
+        barrierDismissible: true);
+  }
+
+  List<Widget> _regresarBotones(context) {
+    return [
+      FlatButton(
+        child: Text("Cancelar"),
+        onPressed: () => Navigator.of(context).pop(),
+      ),
+      FlatButton(
+        child: Text("OK"),
+        onPressed: () {
+          Navigator.of(context).pop();
+        },
+      ),
+    ];
   }
 }
