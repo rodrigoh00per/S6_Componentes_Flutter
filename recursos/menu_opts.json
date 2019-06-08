@@ -4,7 +4,7 @@
     {
       "ruta": "alert",
       "icon": "add_alert",
-      "texto": "Alertas"
+      "texto": "Alertisimas"
     },
     {
       "ruta": "avatar",
@@ -25,6 +25,12 @@
       "ruta": "input",
       "icon": "input",
       "texto": "Inputs Page"
+    },
+    { "ruta": "slider", "icon": "slider", "texto": "Sliders con checkox" },
+    {
+      "ruta": "list",
+      "icon": "list",
+      "texto": "Lista Items"
     }
   ]
 }

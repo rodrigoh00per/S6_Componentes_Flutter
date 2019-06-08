@@ -38,13 +38,11 @@ class AlertPage extends StatelessWidget {
             content: Column(
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
-                Text("Esta la alerta poderisisisima"),
+                Text("Esta es una alerta muy cool"),
                 SizedBox(
                   height: 15.0,
                 ),
-                FlutterLogo(
-                  size: 100.0,
-                )
+                FlutterLogo(size: 50.0,)
               ],
             ),
             actions: this._regresarBotones(context),

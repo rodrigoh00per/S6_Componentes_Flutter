@@ -5,6 +5,8 @@ import 'package:s6_componentes_flutter/src/pages/avatar_page.dart';
 import 'package:s6_componentes_flutter/src/pages/cards_page.dart';
 import 'package:s6_componentes_flutter/src/pages/home_page.dart';
 import 'package:s6_componentes_flutter/src/pages/input_page.dart';
+import 'package:s6_componentes_flutter/src/pages/listview_page.dart';
+import 'package:s6_componentes_flutter/src/pages/slider_page.dart';
 
 Map<String, WidgetBuilder> getApplicationRoutes() {
   return <String, WidgetBuilder>{
@@ -13,6 +15,8 @@ Map<String, WidgetBuilder> getApplicationRoutes() {
     "avatar": (BuildContext context) => AvatarPage(),
     "cards": (BuildContext context) => CardsPage(),
     "animatedContainer": (BuildContext context) => AnimatedContainerPage(),
-    "input": (BuildContext context) => InputPage()
+    "input": (BuildContext context) => InputPage(),
+    "slider": (BuildContext context) => SliderPage(),
+    "list": (BuildContext context) => ListViewPage(),
   };
 }
